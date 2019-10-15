@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # CentOS install
-# curl -fsSL https://get.docker.com -o get-docker.sh
+# curl -LO https://github.com/garyguoli/centos-setup/archive/master.zip 
 # chmod -R +x *
 # sh auto.sh
 # sudo chown -R centos server-setup/
-
+# https://wangdalao.com/1364.html
 
 chmod -R +x *
 work_dir=$(pwd)
@@ -43,6 +43,7 @@ show_menus
     3 ) $filepath$work_dir/base/awssetup.sh;;
     4 ) $filepath$work_dir/app/nginx.sh;;
     5 ) $filepath$work_dir/app/docker.sh;;
+    0 ) $filepath
     * ) show_menus;;
   esac
 # done

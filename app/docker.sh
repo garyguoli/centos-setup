@@ -11,8 +11,8 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 sudo yum install -y docker-ce
 # Add your user to the docker group with the following command.
 
-sudo usermod -aG docker $(whoami)
-
+# sudo usermod -aG docker $(whoami)
+sudo usermod -aG docker www-data 
 # Set Docker to start automatically at boot time:
 
 sudo systemctl enable docker.service
