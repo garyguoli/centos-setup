@@ -43,7 +43,7 @@ show_menus
     3 ) $filepath$work_dir/base/awssetup.sh;;
     4 ) $filepath$work_dir/app/nginx.sh;;
     5 ) $filepath$work_dir/app/docker.sh;;
-    0 ) $filepath
+    0 ) $filepath;;
     * ) show_menus;;
   esac
 # done
